@@ -56,7 +56,7 @@
 #define UNIWILL_KEY_KBDILLUMTOGGLE		0xB9
 
 #define UNIWILL_OSD_KBD_BACKLIGHT_CHANGED	0xF0
-
+#define UNIWILL "UNIWILL"
 struct notifier_block;
 
 int uniwill_wmi_register_notifier(struct notifier_block *nb);
