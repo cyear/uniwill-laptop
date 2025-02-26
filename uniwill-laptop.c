@@ -208,7 +208,6 @@
 #define UNIWILL_GUID "ABBC0F6F-8EA1-11D1-00A0-C90629100000"
 
 #define PWM_MAX 200
-#define POWER_MAX 115 // 最大功率 115W
 
 enum uniwill_method {
     UNIWILL_GET_ULONG = 0x01,
@@ -468,7 +467,7 @@ static int uniwill_read(struct device *dev, enum hwmon_sensor_types type,
         default:
             return -EOPNOTSUPP;
         }
-        pr_info("ret: %u / PL: %u -> %u\n", ret, rpm, rpm & 0xFF);
+        pr_info("ret: %u / PL: %u -> %u\n", ret, value, rpm & 0xFF);
         if (ret < 0)
             return ret;
         *val = value * 1000;
