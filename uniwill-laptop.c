@@ -467,7 +467,7 @@ static int uniwill_read(struct device *dev, enum hwmon_sensor_types type,
         default:
             return -EOPNOTSUPP;
         }
-        pr_info("ret: %u / PL: %u -> %u\n", ret, value, rpm & 0xFF);
+        pr_info("ret: %u / PL: %u", ret, value);
         if (ret < 0)
             return ret;
         *val = value * 1000;
