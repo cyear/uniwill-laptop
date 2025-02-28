@@ -1,3 +1,6 @@
+面包友情提示，使用有非常危险
+
+
 # uniwill-laptop
 Linux kernel driver for various Uniwill laptops. Keep in mind that this kernel module is still
 a prototype, you might seriously damage our laptop by loading this driver.
