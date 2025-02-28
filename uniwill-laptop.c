@@ -416,9 +416,9 @@ static umode_t uniwill_is_visible(const void *drvdata,
     case hwmon_fan:
         return 0444;
     case hwmon_pwm:
-        return 0644;
+        return 0664;
     case hwmon_power:
-        return 0644;
+        return 0664;
     default:
         return 0;
     }
